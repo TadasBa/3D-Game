@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isGrounded", characterController.isGrounded); // jumping animation
         animator.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal"))));
 
-        if (transform.position.y < -20f) // Adjust the y-value as needed
+        if (transform.position.y < -26f) // Adjust the y-value as needed
         {
             Respawn();
         }
